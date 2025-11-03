@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:300,regular,500,600,700,800,900,"
+      rel="stylesheet"
+    />
+    <title>REST Countries API</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- hedaer for  -->
+    <header class="header-container">
+      <div class="header-content">
+        <h2 class="title">Where in the world?</h2>
+        <p><i class="fa-regular fa-moon"></i>&nbsp;&nbsp;Dark Mode</p>
+      </div>
+    </header>
+
+<!-- Search countries by name -->
+    <div class="top-bar"> 
+      <div>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+          type="text"
+          name=""
+          id="searchBar"
+          placeholder="Search for a country"
+        />
+      </div>
+ 
+      <!-- Filter by region dropdown -->
+      <select id="filter">
+        <option hidden >Filter by Region</option>
+        <option value="africa">Africa</option>
+        <option value="americas">Americas</option>
+        <option value="asia">Asia</option>
+        <option value="europe">Europe</option>
+        <option value="oceania">Oceania</option>
+      </select>
+    </div>
+
+    <template id="card-template">
+      <div id="card">
+        <a href="">
+          <img style="height: 175px" alt="Flag" />
+          <section id="countryInfo">
+            <h2></h2>
+            <ul class="ul">
+              <li id="population"></li>
+              <li id="region"></li>
+              <li id="capital"></li>
+            </ul>
+          </section>
+        </a>
+      </div>
+    </template>
+    <div id="countries"></div>
+  </body>
+</html>

@@ -1,0 +1,159 @@
+.body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Nunito, sans-serif;
+}
+
+.header-container {
+  box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.1);
+  padding-inline: 24px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.title {
+  font-weight: 800;
+}
+
+.countries-container {
+  max-width: 1200px;
+  margin-inline: auto;
+  margin-top: 16px;
+  display: flex;
+  gap: 64px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#card-template {
+  max-width: 1200px;
+  margin-inline: auto;
+  color: rgb(255, 255, 255);
+  grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  gap: 20px;
+}
+
+#card img {
+  width: 100%;
+}
+#card {
+  margin-left: 30px;
+  display: inline-block;
+  overflow: hidden;
+  justify-content: space-between;
+  height:350px;
+  width: 300px;
+  border-radius: 8px;
+  padding-bottom: 24px;
+  box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+#card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+#countryInfo{
+    margin-left: 20px;
+    text-decoration: none;
+    color: #000;
+    list-style-type: none;
+}
+.ul{
+     text-decoration: none;
+    list-style-type: none;
+     border-bottom: none;
+}
+/* >>>>>>>>>>>>>>>>>>>> */
+
+ul {
+  list-style-type: none; /* removes bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+h2, li {
+  text-decoration: none; /* removes underline */
+}
+
+/* If the underline still shows, force it off for links too */
+a, a:hover, a:visited {
+  text-decoration: none !important;
+}
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. */
+.top-bar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  background-color: #f5f5f5; /* background under header */
+}
+
+.top-bar div {
+  position: relative;
+  width: 350px; /* make search bar bigger */
+}
+
+.top-bar input {
+  width: 100%;
+  padding: 12px 12px 12px 40px; /* add space for icon */
+  border: none;
+  border-radius: 25px;
+  background-color: #ffffff;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.top-bar i {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 16px;
+}
+
+.top-bar input::placeholder {
+  color: #aaa;
+}
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* Container to position it on the top-right under header */
+#filter {
+  position: absolute;
+  top: 80px;
+  right: 40px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-top: 15px;
+  width: 250px;
+  cursor: pointer;
+}
+
+/* Add placeholder-like first option */
+#filter::before {
+  content: "Filter by the Region";
+  color: #888;
+}
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<, */
+
+
+
+@media(max-width: 768px) {
+    #header-container {
+        justify-content: center;
+    }
+}

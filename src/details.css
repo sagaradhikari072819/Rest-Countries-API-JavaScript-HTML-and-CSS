@@ -1,0 +1,160 @@
+.header-container {
+  box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.1);
+  padding-inline: 24px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+#btns {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+#flag {
+  display: flex;
+  margin: 40px;
+}
+#countryName {
+  margin-left: 40px;
+  font-size: 30px;
+}
+#startUl {
+  display: flex;
+  margin-left: 20px;
+}
+.title {
+  font-weight: 800;
+}
+#backBtn {
+  background-color: #ffffff;
+  color: #333;
+  /* font-family: sans-serif; */
+  font-size: 1rem;
+  font-weight: 600;
+  border: 1px solid #ccc;
+  border-radius: 9999px; /* For a pill-shaped button */
+  padding: 0.55rem 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#homeBtn {
+  background-color: #ffffff;
+  color: #333;
+  /* font-family: sans-serif; */
+  font-size: 1rem;
+  font-weight: 600;
+  border: 1px solid #ccc;
+  border-radius: 9999px; /* For a pill-shaped button */
+  padding: 0.55rem 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* #card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  margin: 10px auto;
+  width: 90%;
+  font-family: 'Nunito', sans-serif;
+  color: black;
+  font-size: 12px;
+} */
+#abc {
+  display: flex;
+}
+
+#card a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+#card img {
+  width: 600px;
+  height: 400px;
+  margin-left: 0px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+#ul0 {
+  display: flex;
+}
+
+#ul1 {
+  list-style: none;
+  padding: 10px;
+  margin: 10px;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 18px;
+  flex-wrap: wrap;
+  
+}
+
+#ul2 {
+  list-style: none;
+  flex-wrap: wrap;
+  padding:10 px;
+  margin: 10;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 18px;
+  
+}
+
+#bc1 {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+h2 {
+  margin-left: 20px;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+#border-countries {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+*bc {
+  margin-left: 20px;
+}
+
+#border-countries h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#border-countries button {
+  margin-right: 10px;
+  padding: 5px 12px;
+  border: 2px solid black;
+  background: rgb(190, 222, 209);
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: medium;
+  font-family: nunito;
+}
+@media (max-width: 400px) {
+  #header-container {
+    justify-content: center;
+    display: contents;
+  }
+  #ul0{
+    display: grid;
+    display: contents;
+  }
+}
